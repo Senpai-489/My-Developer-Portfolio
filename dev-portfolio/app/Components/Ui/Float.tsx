@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Float() {
   return (
     <div
-      className="text-white absolute hover:drop-shadow-[0_0px_8px_rgba(255,255,255,1)] ease-in duration-300 top-72 -translate-y-1/2 right-4 md:right-8 lg:right-16 bg-white h-auto w-16 p-4 rounded-lg shadow-lg flex flex-col items-center space-y-4"
+      className="text-white absolute hover:drop-shadow-[0_0px_8px_rgba(255,255,255,1)]  ease-in duration-300 -translate-y-1/2 right-4 p-4 md:right-8 lg:right-16 bg-white top-[55vh] sm:top-72 w-16  rounded-lg shadow-lg flex flex-col items-center"
     >
       <Link href="tel:7627023295">
         <Image
@@ -18,7 +18,7 @@ export default function Float() {
           alt="Phone"
           width={40}
           height={40}
-          className="hover:scale-110 transition-transform"
+          className="hover:scale-110 mb-2 transition-transform"
         />
       </Link>
       <Link
@@ -31,7 +31,7 @@ export default function Float() {
           alt="Github"
           width={40}
           height={40}
-          className="hover:scale-110 transition-transform"
+          className="hover:scale-110 mb-2 transition-transform"
         />
       </Link>
       <Link href="mailto:amitfr489@gmail.com">
@@ -40,7 +40,7 @@ export default function Float() {
           alt="Email"
           width={40}
           height={40}
-          className="hover:scale-110 transition-transform"
+          className="hover:scale-110 mb-2 transition-transform"
         />
       </Link>
       <Link
@@ -53,7 +53,7 @@ export default function Float() {
           alt="LinkedIn"
           width={40}
           height={40}
-          className="hover:scale-110 transition-transform"
+          className="hover:scale-110 mb-2 transition-transform"
         />
       </Link>
     </div>
