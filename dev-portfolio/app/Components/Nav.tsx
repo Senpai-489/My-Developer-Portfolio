@@ -25,7 +25,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className="text-white w-full sm: p-4 bg-transparent fixed top-0 z-10">
+    <nav className="text-white w-full sm: p-4 bg-transparent backdrop-blur-2xl fixed top-0 z-10">
       <div className="flex items-center justify-between md:justify-center">
         {/* Hamburger Menu for Mobile */}
         <button

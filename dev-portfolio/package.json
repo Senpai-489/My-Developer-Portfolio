@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.22.0",
+    "@tsparticles/engine": "^3.6.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.6.0",
     "clsx": "^2.1.1",
     "coreui": "^0.4.2-alpha2",
     "framer-motion": "^11.11.17",
@@ -16,6 +20,7 @@
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-dropzone": "^14.3.5",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {

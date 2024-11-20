@@ -37,7 +37,7 @@ export default function Body() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="relative min-h-screen overflow-hidden  text-white">
       <Float />
       {/* Main Content Section */}
       <div className="flex flex-col items-start mt-8 justify-center p-6 md:p-16 space-y-2">
@@ -71,7 +71,7 @@ export default function Body() {
           </button>
         </div>
               <Blob>
-                
+
               </Blob>
         
       </div>
