@@ -63,11 +63,11 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              href="#experience"
+              href=""
               className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
               onClick={closeMenu}
             >
-              Experience
+              Projects
             </Link>
           </li>
           <li>
