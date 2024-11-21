@@ -70,15 +70,7 @@ export default function Nav() {
               Projects
             </Link>
           </li>
-          <li>
-            <Link
-              href="#services"
-              className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
-              onClick={closeMenu}
-            >
-              Services
-            </Link>
-          </li>
+          
           <li>
             <Link
               href="#contact"

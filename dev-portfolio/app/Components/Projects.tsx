@@ -48,7 +48,7 @@ const Experience = () => {
           </DirectionAwareHover> 
           
           <div>
-          <h1 className='text-lg md:text-3xl text-green-300 m-8 font-bold'>Wabi Sabi</h1>
+          <h1 className='text-lg md:text-3xl text-green-300 m-8 font-bold'>EZ Promptor</h1>
           <p className='text-left md:w-[40vw] pl-10'>A fullstack CRUD WebApp to share creative AI Prompts with a built in AI bot to test Prompts.</p>
          <div className='mt-12'> <Image 
           src={Git}
