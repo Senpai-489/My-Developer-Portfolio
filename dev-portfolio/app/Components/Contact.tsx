@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <div className="relative bottom-16 text-center px-4 sm:px-8 md:px-16">
     {/* Heading */}
-    <h1 className="text-3xl decoration-solid m-20 border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
+    <h1 id='About' className="text-3xl decoration-solid m-20 border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
       Contact
     </h1>
     <div className='flex justify-center'>

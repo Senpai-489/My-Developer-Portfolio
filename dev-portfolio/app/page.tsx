@@ -7,6 +7,8 @@ import About from "./Components/About";
 import Experience from "./Components/Projects";
 import { TracingBeam } from "./Components/Ui/beam";
 import Contact from "./Components/Contact";
+import Footer from "./Components/footer";
+
 
 export default function App() {
   return (
@@ -16,6 +18,7 @@ export default function App() {
       <About/>
       <Experience/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

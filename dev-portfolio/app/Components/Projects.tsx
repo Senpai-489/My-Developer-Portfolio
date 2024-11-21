@@ -5,12 +5,13 @@ import { DirectionAwareHover } from './Ui/hoverCard';
 import backImage from '../assets/wabi.png';
 import Ezpromptor from '../assets/ezPromptor.png'
 import Link from 'next/link';
+import vaule from '@/app/assets/vaul-e.jpg'
 import Chess from '@/app/assets/chess.png'
 import Image from 'next/image';
 import Farmingo from '@/app/assets/Farmingo.png'
 import Git from '@/app/assets/github.svg'
 import Vercel from '@/app/assets/vercel.ico'
-const Experience = () => {
+const Projects = () => {
   return (
     <div className="relative bottom-16 text-center px-4 sm:px-8 md:px-16">
       <h1 className="text-3xl decoration-solid border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
@@ -34,7 +35,7 @@ const Experience = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://github.com/Senpai-489/Wabi-Sabi">https://github.com/Senpai-489/Wabi-Sabi</Link></div>
+          <Link href="https://github.com/Senpai-489/Wabi-Sabi" className='text-sm md:text-lg'>Github Repository</Link></div>
           </div>
           </div>
         </div>
@@ -57,7 +58,7 @@ const Experience = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://github.com/Senpai-489/ez_promptor">https://github.com/Senpai-489/ez_promptor</Link></div>
+          <Link href="https://github.com/Senpai-489/ez_promptor" className='text-sm md:text-lg'>Github Repository</Link></div>
           <div > <Image 
           src={Vercel}
           width={40}
@@ -65,14 +66,14 @@ const Experience = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://ez-promptor.vercel.app/">https://ez-promptor.vercel.app/</Link></div>
+          <Link href="https://ez-promptor.vercel.app/" className='text-sm md:text-lg'>Visit Deployment</Link></div>
           </div>
           
           </div>
         </div>
         {/* Third Project */}
         <div className='mt-16 ml-16 md:ml-0 h-full'>
-          <div className='flex gap-2 align-items-center md:flex-row flex-col '>
+          <div className='flex gap-4 align-items-center md:flex-row flex-col '>
           <DirectionAwareHover  imageUrl={Farmingo}> 
             <p className='text-lg text-green-300'>Farmingo</p>
             <p>An app to help farmers with innovative Solutions</p>
@@ -86,13 +87,13 @@ const Experience = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://github.com/Senpai-489/Wabi-Sabi">https://github.com/Senpai-489/Wabi-Sabi</Link></div>
+          <Link href="https://github.com/Senpai-489/Wabi-Sabi" className='text-sm md:text-lg'>Github Repository</Link></div>
           </div>
           </div>
         </div>
         {/* fourth project */}
         <div className='mt-16 ml-16 md:ml-0 h-full'>
-          <div className='flex gap-2 align-items-center md:flex-row flex-col '>
+          <div className='flex gap-4 align-items-center md:flex-row flex-col '>
           <DirectionAwareHover  imageUrl={Chess}> 
             <p className='text-lg text-green-300'>Multiplayer Chess</p>
             <p>A Multiplayer chess game using web sockets</p>
@@ -106,8 +107,39 @@ const Experience = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://github.com/Senpai-489/Multiplayer_Chess">https://github.com/Senpai-489/Multiplayer_Chess</Link></div>
+          <Link href="https://github.com/Senpai-489/Multiplayer_Chess" className='text-sm md:text-lg'>Github Repository</Link></div>
           </div>
+          </div>
+        </div>
+        {/* fifth project */}
+        <div className='mt-16 ml-16 md:ml-0 h-full'>
+          <div className='flex align-items-center md:flex-row flex-col '>
+          <DirectionAwareHover  imageUrl={vaule}> 
+            <p className='text-lg text-green-300'>Vaul-E</p>
+            <p>A WebApp to share AI prompts</p>
+          </DirectionAwareHover> 
+          
+          <div>
+          <h1 className='text-lg md:text-3xl text-green-300 m-8 font-bold'>Vaul-E</h1>
+          <p className='text-left md:w-[40vw] pl-10'>A web3 wallet organizer, currently works on Ethereum and solana wallets</p>
+         <div className='mt-12'> <Image 
+          src={Git}
+          width={40}
+          height={40}
+          className='bg-white p-2 inline rounded-lg m-2'
+          alt = 'Git icon'
+          />
+          <Link href="https://github.com/Senpai-489/Vaul-e" className='text-sm md:text-lg'>Github Repository</Link></div>
+          <div > <Image 
+          src={Vercel}
+          width={40}
+          height={40}
+          className='bg-white p-2 inline rounded-lg m-2'
+          alt = 'Git icon'
+          />
+          <Link href="https://vaul-e.vercel.app/" className='text-sm md:text-lg'>Visit Deployment</Link></div>
+          </div>
+          
           </div>
         </div>
       </TracingBeam>
@@ -115,4 +147,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Projects;

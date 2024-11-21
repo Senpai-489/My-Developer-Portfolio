@@ -1,15 +1,19 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import React, { useState, useRef } from "react";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Create refs for each section
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    // Prevent body scrolling when the menu is open
-    document.body.style.overflow = isOpen ? "auto" : "hidden";
+    document.body.style.overflow = isOpen ? "auto" : "hidden"; // Prevent scrolling when menu is open
   };
 
   const closeMenu = () => {
@@ -17,20 +21,21 @@ export default function Nav() {
     document.body.style.overflow = "auto";
   };
 
-  // Ensure body overflow resets on unmount
-  useEffect(() => {
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
+  const scrollToSection = (ref:any) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+      closeMenu(); 
+    }
+  };
 
   return (
-    <nav className="text-white w-full sm: p-4 bg-transparent backdrop-blur-2xl fixed top-0 z-10">
+    <nav className="text-white w-full p-4 bg-transparent backdrop-blur-2xl fixed top-0 z-10">
       <div className="flex items-center justify-between md:justify-center">
-        {/* Hamburger Menu for Mobile */}
+        {/* Hamburger Menu */}
         <button
           className="text-4xl z-10 left-0 top-4 w-16 mb-4 mr-4 absolute font-[Aldrich] md:hidden focus:outline-none"
           onClick={toggleMenu}
+          aria-label="Toggle Navigation Menu"
         >
           ☰
         </button>
@@ -44,41 +49,36 @@ export default function Nav() {
           } md:flex md:space-x-8 md:bg-transparent md:static md:p-0 md:h-auto md:text-center transition-all duration-300`}
         >
           <li>
-            <Link
-              href="#home"
+            <button
               className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
-              onClick={closeMenu}
+              onClick={() => scrollToSection(homeRef)}
             >
               Home
-            </Link>
+            </button>
           </li>
           <li>
-            <Link
-              href="#about"
+            <button
               className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
-              onClick={closeMenu}
+              onClick={() => scrollToSection(aboutRef)}
             >
               About
-            </Link>
+            </button>
           </li>
           <li>
-            <Link
-              href=""
+            <button
               className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
-              onClick={closeMenu}
+              onClick={() => scrollToSection(projectsRef)}
             >
               Projects
-            </Link>
+            </button>
           </li>
-          
           <li>
-            <Link
-              href="#contact"
+            <button
               className="text-xl font-[Aldrich] w-full block py-2 hover:text-green-300 hover:scale-110 ease-in duration-200"
-              onClick={closeMenu}
+              onClick={() => scrollToSection(contactRef)}
             >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
