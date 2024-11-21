@@ -14,7 +14,7 @@ import Vercel from '@/app/assets/vercel.ico'
 const Projects = () => {
   return (
     <div className="relative bottom-16 text-center px-4 sm:px-8 md:px-16">
-      <h1 className="text-3xl decoration-solid border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
+      <h1 id='Projects' className="text-3xl decoration-solid border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
         Projects
       </h1>
       <h2 className='mt-16 text-2xl'>Here are some of the projects I've worked on</h2> {/* Changed to h2 */}

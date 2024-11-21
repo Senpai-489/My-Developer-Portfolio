@@ -8,14 +8,15 @@ import Experience from "./Components/Projects";
 import { TracingBeam } from "./Components/Ui/beam";
 import Contact from "./Components/Contact";
 import Footer from "./Components/footer";
-
+import { useRef } from "react";
 
 export default function App() {
+  
   return (
-    <div className= "relative min-h-screen bg-gradient-to-b from-gray-900 to-black overflow-hidden text-white">
+    <div id="Home" className= "relative min-h-screen bg-gradient-to-b from-gray-900 to-black overflow-hidden text-white">
       <Nav/>
       <Body/>
-      <About/>
+      <About />
       <Experience/>
       <Contact/>
       <Footer/>
