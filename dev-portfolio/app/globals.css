@@ -4,6 +4,7 @@
 
 *::-webkit-scrollbar {
   width: 8px;
+  
 }
 
 *::-webkit-scrollbar-track {
@@ -18,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--tertiary);
+  background-color: #4bde97;
 }
 :root {
   --background: #ffffff;

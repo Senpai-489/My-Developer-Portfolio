@@ -15,6 +15,7 @@
     "@tsparticles/slim": "^3.6.0",
     "clsx": "^2.1.1",
     "coreui": "^0.4.2-alpha2",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.11.17",
     "fs": "^0.0.1-security",
     "lottie-react": "^2.4.0",

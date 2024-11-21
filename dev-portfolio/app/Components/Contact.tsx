@@ -48,8 +48,8 @@ const Contact = () => {
            group-hover/input:shadow-none transition duration-400 text-white
            `, bg-stone-800 text-white'>
       </textarea>
-      <button  className="px-8 py-2 h-10 w-72 m-4 rounded-full relative bg-slate-700 text-white text-sm hover:bg-rose-500 hover:shadow-white/[0.1] transition duration-200 border border-slate-600">
-  <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+      <button  className="px-8 py-2 h-10 w-44 m-4 rounded-lg relative bg-slate-700 text-white text-sm hover:bg-rose-500 hover:shadow-white/[0.1] transition duration-200 border border-slate-600">
+  <div className="absolute inset-x-0 h-[3px] w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
   <span className="relative z-20">
     Submit
   </span>
