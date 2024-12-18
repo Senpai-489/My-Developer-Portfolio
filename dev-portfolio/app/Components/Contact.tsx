@@ -1,7 +1,13 @@
 'use client'
 import React from 'react'
 import { Input } from './Ui/input'  
-
+import Float from './Ui/Float'
+import Link from 'next/link'
+import Phone from "@/app/assets/phone.svg";
+import Github from "@/app/assets/github.svg";
+import Email from "@/app/assets/email.svg";
+import LinkedIn from "@/app/assets/linkedin.svg";
+import Image from 'next/image'
 const Contact = () => {
 //   const client = new SMTPClient({
 //     user: process.env.NEXT_PUBLIC_EMAIL_USER,
@@ -30,32 +36,56 @@ const Contact = () => {
     <h1 id='Contact' className="text-3xl decoration-solid m-20 border-green-200 border-b-2 border-r-2 rounded-lg p-2 inline-block font-semibold md:text-6xl bg-gradient-to-r from-green-200 to-green-600 bg-clip-text text-transparent">
       Contact
     </h1>
-    <div className='flex justify-center'>
-     <form className='border-[1px] w-full md:w-[60vw] rounded-lg border-green-300 p-4'>
-      <h1 className='text-3xl mb-8'>Send Your Queries</h1><div className='flex justify-center'>
-      
+    <div className='flex flex-col justify-center'>
+    <h1 className='text-3xl'>Get in touch with me! Let's Work Together</h1>
+    <div
+      className="text-white relative top-20 w-[80vw] md:w-[40vw] mdh-[20vh] p-4 items-center  mx-auto hover:drop-shadow-[0_0px_8px_rgba(255,255,255,1)]  ease-in duration-300  bg-white   rounded-lg shadow-lg flex flex-row justify-between"
+    >
+      <Link href="tel:7627023295">
+        <Image
+          src={Phone}
+          alt="Phone"
+          width={50}
+          height={50}
+          className="hover:scale-110 hover:drop-shadow-[0_0px_2px_rgba(0,190,0,1)] mb-2 transition-transform"
+        />
+      </Link>
+      <Link
+        href="https://github.com/Senpai-489"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={Github}
+          alt="Github"
+          width={50}
+          height={50}
+          className="hover:scale-110 hover:drop-shadow-[0_0px_2px_rgba(0,190,0,1)] mb-2 transition-transform"
+        />
+      </Link>
+      <Link href="mailto:amitfr489@gmail.com">
+        <Image
+          src={Email}
+          alt="Email"
+          width={50}
+          height={50}
+          className="hover:scale-110 hover:drop-shadow-[0_0px_2px_rgba(0,190,0,1)] mb-2 transition-transform"
+        />
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/amitsingh489/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={LinkedIn}
+          alt="LinkedIn"
+          width={50}
+          height={50}
+          className="hover:scale-110 hover:drop-shadow-[0_0px_2px_rgba(0,190,0,1)] mb-2 transition-transform"
+        />
+      </Link>
     </div>
-      <p className='text-left p-2'>Full Name</p>
-      <Input type='text' placeholder='John Doe' className='bg-stone-800 text-white'/>
-      <p className='text-left p-2'>Email</p>
-      <Input type='email' placeholder='example@gmail.com' className='bg-stone-800 text-white'/>
-      <p className='text-left p-2'>Message</p>
-      <textarea rows={10} placeholder='Type your message here' className='`text-white flex h-40 w-full border-none bg-gray-50 dark:bg-zinc-800  dark:text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
-          file:text-sm file:font-medium placeholder:text-neutral-400 dark:placeholder-text-neutral-600 
-          focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
-           disabled:cursor-not-allowed disabled:opacity-50
-           dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
-           group-hover/input:shadow-none transition duration-400 text-white
-           `, bg-stone-800 text-white'>
-      </textarea>
-      <button  className="px-8 py-2 h-10 w-44 m-4 rounded-lg relative bg-slate-700 text-white text-sm hover:bg-rose-500 hover:shadow-white/[0.1] transition duration-200 border border-slate-600">
-  <div className="absolute inset-x-0 h-[3px] w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-  <span className="relative z-20">
-    Submit
-  </span>
-</button>
-    </form>
-    
 
     </div>
     </div>

@@ -22,7 +22,7 @@ const Projects = () => {
       
         <div className='mt-16 ml-16 md:ml-0 h-full'>
           <div className='flex flex-col md:flex-row  '>
-          <DirectionAwareHover  imageUrl={backImage}> 
+          <DirectionAwareHover imageUrl={backImage}> 
             <p className='text-lg text-green-300'>Wabi Sabi</p>
             <p>An app to help children suffering from Alexythimea</p>
           </DirectionAwareHover> <div>
