@@ -39,7 +39,7 @@ const Contact = () => {
     <div className='flex flex-col justify-center'>
     <h1 className='text-3xl'>Get in touch with me! Let's Work Together</h1>
     <div
-      className="text-white relative top-20 w-[80vw] md:w-[40vw] mdh-[20vh] p-4 items-center  mx-auto hover:drop-shadow-[0_0px_8px_rgba(255,255,255,1)]  ease-in duration-300  bg-white   rounded-lg shadow-lg flex flex-row justify-between"
+      className="text-white relative top-20 w-[80vw] md:w-[40vw] mdh-[20vh] px-12 py-8 items-center  mx-auto hover:drop-shadow-[0_0px_8px_rgba(255,255,255,1)]  ease-in duration-300  bg-white   rounded-2xl shadow-lg flex flex-row justify-between"
     >
       <Link href="tel:7627023295">
         <Image
