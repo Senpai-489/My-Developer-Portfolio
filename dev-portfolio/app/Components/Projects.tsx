@@ -87,7 +87,7 @@ const Projects = () => {
           className='bg-white p-2 inline rounded-lg m-2'
           alt = 'Git icon'
           />
-          <Link href="https://github.com/Senpai-489/Wabi-Sabi" className='text-sm md:text-lg'>Github Repository</Link></div>
+          <Link href="https://github.com/Senpai-489/Farmingo" className='text-sm md:text-lg'>Github Repository</Link></div>
           </div>
           </div>
         </div>
