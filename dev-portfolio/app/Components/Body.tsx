@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Body() {
   const getResume = () => {
     window.open(
-      "https://drive.google.com/file/d/10IDTYUHBVDjZns9J_568j2Pe5REl1lXn/view?usp=drive_link",
+      "https://drive.google.com/file/d/14NSkrAftUV1Jjt4smlzR8A844xu46le_/view?usp=sharing",
       "_blank"
     );
   };
