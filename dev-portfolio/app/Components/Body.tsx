@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Float from "@/app/Components/Ui/Float";
 import Blob from "./Ui/blob";
+import Link from "next/link";
 
 export default function Body() {
   const getResume = () => {
@@ -60,9 +61,9 @@ export default function Body() {
 
         {/* Buttons */}
         <div className="flex flex-row gap-4 mt-12">
-          <button className="font-[Aldrich] text-white text-lg   w-40  h-10 rounded-lg bg-gradient-to-br from-red-500 to-purple-800 hover:scale-105 hover:drop-shadow-[0_0px_10px_rgba(0,120,64,1)] ease-in duration-200">
+          <Link href="mailto:amitfr489@gmail.com" className="font-[Aldrich] text-center pt-2 text-white text-lg   w-40  h-10 rounded-lg bg-gradient-to-br from-red-500 to-purple-800 hover:scale-105 hover:drop-shadow-[0_0px_10px_rgba(0,120,64,1)] ease-in duration-200">
           <p>Hire Me!</p>
-          </button>
+          </Link>
           <button
             onClick={getResume}
             className="font-[Aldrich] text-white text-lg   w-40  h-10 rounded-lg bg-gradient-to-br from-red-500 to-purple-800 hover:scale-105 hover:drop-shadow-[0_0px_10px_rgba(0,120,64,1)] ease-in duration-200"
